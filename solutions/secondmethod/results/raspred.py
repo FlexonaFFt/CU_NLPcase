@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('smalltrainer_res/submission52.csv')
-class_distribution = df['pred_label'].value_counts()
-print("Распределение классов по колонке 'label':")
+df = pd.read_csv('submission.csv')
+class_distribution = df['category'].value_counts()
+print("Распределение классов по колонке 'category':")
 print(class_distribution)
